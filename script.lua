@@ -482,6 +482,12 @@ Tab0:AddButton({
   	end    
 })
 
+local Tab6 = Window1:MakeTab({
+	Name = "Game Scripts",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
 --Tab 1
 local Default_Disable = false;
 Tab1:AddSlider({
@@ -734,6 +740,43 @@ Tab5:AddButton({
 	Name = "TurtleSpy!",
 	Callback = function()
         loadstring(game:HttpGet("https://pastebin.com/raw/BDhSQqUU", true))()
+  	end
+})
+--TAB6
+Tab6:AddButton({
+	Name = "Insane elevator!",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Nadir3709/ScriptHub/main/KeySystem"))()
+  	end
+})
+Tab6:AddButton({
+	Name = "Arsenal!",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/shadow1234d/dsaaq2/main/arsenal.lua"))()
+  	end
+})
+Tab6:AddButton({
+	Name = "BedWars!",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+  	end
+})
+Tab6:AddButton({
+	Name = "BedWars!",
+	Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/littlegui/main/Build-A-Boat'))()
+  	end
+})
+Tab6:AddButton({
+	Name = "Doors!",
+	Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/6kfed0tP"))()
+  	end
+})
+Tab6:AddButton({
+	Name = "BloxFruits!",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/toosiwhip/statue/main/script"))()
   	end
 })
 local Default_Disable = true;
