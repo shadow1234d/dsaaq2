@@ -419,11 +419,11 @@ end
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))();
 
 local Window1 = OrionLib:MakeWindow({
-    Name = "Cheat GUI";
+    Name = "Hacking | 100% loaded";
     HidePremium = false,
     SaveConfig = false,
     ConfigFolder = "Orion_Gui",
-    IntroText = "Cheats"
+    IntroText = "The Hacker's GUI"
 })
 
 --Functions
@@ -473,7 +473,7 @@ local Tab5 = Window1:MakeTab({
 	PremiumOnly = false
 })
 --Tab 0
-Tab0:AddLabel("Version: "..Gui_Version);
+Tab0:AddLabel("Version: 3.5.15-BETA"..Gui_Version);
 
 Tab0:AddButton({
 	Name = "Destroy Gui",
@@ -727,6 +727,8 @@ Tab4:AddButton({
         end
   	end    
 })
+--//
+
 --TAB5
 Tab5:AddButton({
 	Name = "Infinite yield!",
@@ -748,6 +750,15 @@ Tab5:AddButton({
         loadstring(game:HttpGet("https://pastebin.com/raw/BDhSQqUU", true))()
   	end
 })
+
+Tab5:AddButton({
+	Name = "SimpleSpy!",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/exxtremestuffs/SimpleSpySource/master/SimpleSpy.lua", true))()
+  	end
+})
+--//
+
 --TAB6
 Tab6:AddButton({
 	Name = "Insane elevator!",
@@ -768,7 +779,7 @@ Tab6:AddButton({
   	end
 })
 Tab6:AddButton({
-	Name = "BedWars!",
+	Name = "Build A Boat For Treasure!",
 	Callback = function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/littlegui/main/Build-A-Boat'))()
   	end
@@ -785,6 +796,8 @@ Tab6:AddButton({
         loadstring(game:HttpGet("https://raw.githubusercontent.com/toosiwhip/statue/main/script"))()
   	end
 })
+--//
+
 --TAB7
 Tab7:AddButton({
 	Name = "Expedition Antarctica!",
