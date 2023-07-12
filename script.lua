@@ -488,6 +488,12 @@ local Tab6 = Window1:MakeTab({
 	PremiumOnly = false
 })
 
+local Tab7 = Window1:MakeTab({
+	Name = "2nd Game Scripts",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
 --Tab 1
 local Default_Disable = false;
 Tab1:AddSlider({
@@ -777,6 +783,13 @@ Tab6:AddButton({
 	Name = "BloxFruits!",
 	Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/toosiwhip/statue/main/script"))()
+  	end
+})
+--TAB7
+Tab7:AddButton({
+	Name = "Expedition Antarctica!",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ir0kz/script/main/Expedition%20Antarctica.lua"))()
   	end
 })
 local Default_Disable = true;
