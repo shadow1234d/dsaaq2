@@ -757,9 +757,37 @@ Tab5:AddButton({
         loadstring(game:HttpGet("https://raw.githubusercontent.com/exxtremestuffs/SimpleSpySource/master/SimpleSpy.lua", true))()
   	end
 })
+
+Tab5:AddButton({
+	Name = "Doors spawner",
+	Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/plamen6789/DoorsEntitySummonerGUI/main/EntityGUI'))()
+  	end
+})
+
+Tab5:AddButton({
+	Name = "Doors spawner 2",
+	Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/plamen6789/OldEntityGUI/main/OldEntityGUI'))()
+  	end
+})
+
+MainTab:AddButton({
+	Name = "Build a boat boss spawn",
+	Callback = function()
+        loadstring(game:HttpGet('https://pastebin.com/raw/wZcf0PwT'))()
+  	end    
+})
 --//
 
 --TAB6
+Tab6:AddButton({
+    Name = "VG Hub build a boat for treasure",
+        Callback = function()
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/littlegui/main/Build-A-Boat'))()
+    end
+})
+
 Tab6:AddButton({
 	Name = "Insane elevator!",
 	Callback = function()
