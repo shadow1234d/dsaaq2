@@ -766,13 +766,6 @@ Tab5:AddButton({
 })
 
 Tab5:AddButton({
-	Name = "Doors spawner 2",
-	Callback = function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/plamen6789/OldEntityGUI/main/OldEntityGUI'))()
-  	end
-})
-
-MainTab:AddButton({
 	Name = "Build a boat boss spawn",
 	Callback = function()
         loadstring(game:HttpGet('https://pastebin.com/raw/wZcf0PwT'))()
@@ -794,30 +787,28 @@ Tab6:AddButton({
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Nadir3709/ScriptHub/main/KeySystem"))()
   	end
 })
+
 Tab6:AddButton({
 	Name = "Arsenal!",
 	Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/shadow1234d/dsaaq2/main/arsenal.lua"))()
   	end
 })
+
 Tab6:AddButton({
 	Name = "BedWars!",
 	Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
   	end
 })
-Tab6:AddButton({
-	Name = "Build A Boat For Treasure!",
-	Callback = function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/littlegui/main/Build-A-Boat'))()
-  	end
-})
+
 Tab6:AddButton({
 	Name = "Doors!",
 	Callback = function()
         loadstring(game:HttpGet("https://pastebin.com/raw/6kfed0tP"))()
   	end
 })
+
 Tab6:AddButton({
 	Name = "BloxFruits!",
 	Callback = function()
