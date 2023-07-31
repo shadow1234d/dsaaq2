@@ -1334,6 +1334,13 @@ SpecificSection6:AddButton({
         loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/XTheMasterX/Scripts/Main/PrisonLife"))()
     end
 })
+
+SpecificSection6:AddButton({
+    Name = "Prison Life Admin",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/piglex9/icetray3/main/latest.lua"))()
+    end
+})
 local Default_Disable = true;
 OrionLib:Init()
 --////
