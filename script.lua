@@ -533,6 +533,17 @@ local SpecificSection9 = Specific:AddSection({
 	Name = "Motorcycle Mayhem"
 })
 
+local SpecificSection10 = Specific:AddSection({
+	Name = "Natural Disasters Island"
+})
+
+local SpecificSection11 = Specific:AddSection({
+	Name = "Tower Of Hell"
+})
+
+local SpecificSection12 = Specific:AddSection({
+	Name = "Apeirophobia"
+})
 --Tab 0
 Tab0:AddLabel("Version: 3.5.15-BETA"..Gui_Version);
 
@@ -1400,6 +1411,27 @@ SpecificSection9:AddButton({
     Name = "Motorcycle Mayhem",
     Callback = function()
         loadstring(game:HttpGet("https://pastebin.com/raw/cwUuTKjF"))()
+    end
+})
+
+SpecificSection10:AddButton({
+    Name = "Natural Disaster Island",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/2dgeneralspam1/scripts-and-stuff/master/scripts/garfield%20hub", true))()
+    end
+})
+
+SpecificSection11:AddButton({
+    Name = "Tower Of Hell",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/insanedude59/TowerOfHell/main/OpenSource.lua"))()
+    end
+})
+
+SpecificSection12:AddButton({
+    Name = "Apeirophobia",
+    Callback = function()
+        loadstring(game:HttpGet('https://pastebin.com/raw/0ptVa7Dn'))()
     end
 })
 local Default_Disable = true;
