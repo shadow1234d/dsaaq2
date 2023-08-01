@@ -1252,6 +1252,13 @@ Randomscripts:AddButton({
         loadstring(game:HttpGet('https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua'))()
     end
 })
+
+Randomscripts:AddButton({
+    Name = "Builder Tools",
+    Callback = function()
+        loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/BTools.txt"))()
+    end
+})
 --sscripts
 SpecificSection1:AddButton({
     Name = "Rainbow Friends GUI",
