@@ -521,6 +521,18 @@ local SpecificSection6 = Specific:AddSection({
 	Name = "Prison Life"
 })
 
+local SpecificSection7 = Specific:AddSection({
+	Name = "JailBreak"
+})
+
+local SpecificSection8 = Specific:AddSection({
+	Name = "Murder Mystery 2"
+})
+
+local SpecificSection9 = Specific:AddSection({
+	Name = "Motorcycle Mayhem"
+})
+
 --Tab 0
 Tab0:AddLabel("Version: 3.5.15-BETA"..Gui_Version);
 
@@ -1208,6 +1220,27 @@ Randomscripts:AddButton({
         loadstring(game:HttpGetAsync(("https://gist.githubusercontent.com/DinosaurXxX/b757fe011e7e600c0873f967fe427dc2/raw/ee5324771f017073fc30e640323ac2a9b3bfc550/dark%2520dex%2520v4")))()
     end
 })
+
+Randomscripts:AddButton({
+    Name = "Rage Flake",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/shadow1234d/dsaaq2/main/RFlake.lua"))()
+    end
+})
+
+Randomscripts:AddButton({
+    Name = "Frixon Hub",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/shadow1234d/dsaaq2/main/FrixonHub.lua"))()
+    end
+})
+
+Randomscripts:AddButton({
+    Name = "Unnamed ESP",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua'))()
+    end
+})
 --sscripts
 SpecificSection1:AddButton({
     Name = "Rainbow Friends GUI",
@@ -1335,10 +1368,38 @@ SpecificSection6:AddButton({
     end
 })
 
-SpecificSection6:AddButton({
-    Name = "Prison Life Admin",
+SpecificSection7:AddButton({
+    Name = "JailBreak",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/piglex9/icetray3/main/latest.lua"))()
+    end
+})
+
+SpecificSection7:AddButton({
+    Name = "JailBreak 2",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/shadow1234d/dsaaq2/main/jb.lua"))()
+    end
+})
+
+SpecificSection8:AddButton({
+    Name = "Murder Mystery 2",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/vwSaraa/LunarHub/main/mm2"))()
+    end
+})
+
+SpecificSection8:AddButton({
+    Name = "Murder Mystery 2 Second Script",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/shadow1234d/dsaaq2/main/mm2.lua"))()
+    end
+})
+
+SpecificSection9:AddButton({
+    Name = "Motorcycle Mayhem",
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/cwUuTKjF"))()
     end
 })
 local Default_Disable = true;
