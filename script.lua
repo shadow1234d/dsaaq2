@@ -544,6 +544,10 @@ local SpecificSection11 = Specific:AddSection({
 local SpecificSection12 = Specific:AddSection({
 	Name = "Apeirophobia"
 })
+
+local SpecificSection13 = Specific:AddSection({
+	Name = "Kitty"
+})
 --Tab 0
 Tab0:AddLabel("Version: 3.5.15-BETA"..Gui_Version);
 
@@ -1439,6 +1443,13 @@ SpecificSection12:AddButton({
     Name = "Apeirophobia",
     Callback = function()
         loadstring(game:HttpGet('https://pastebin.com/raw/0ptVa7Dn'))()
+    end
+})
+
+SpecificSection13:AddButton({
+    Name = "Kitty",
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/MwXkxRam"))()
     end
 })
 local Default_Disable = true;
