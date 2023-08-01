@@ -16,8 +16,8 @@ local Tab2 = Window:MakeTab({
 })
 
 --PARAGRAPHS
-Tab1:AddParagraph("Paragraph","If you do not know the key, you shouldnt becouse this is a private script!")
-Tab2:AddParagraph("Paragraph","Made by s0shadow0BG1, known as TheShadowReturned!")
+Tab1:AddParagraph("WARNING","If you do not know the key, you shouldnt becouse this is a private script!")
+Tab2:AddParagraph("CREDITS","Made by s0shadow0BG1, known as TheShadowReturned!")
 
 --Inputs
 
