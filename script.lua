@@ -566,6 +566,10 @@ local SpecificSection13 = Specific:AddSection({
 local SpecificSection14 = Specific:AddSection({
 	Name = "Mad City"
 })
+
+local SpecificSection15 = Specific:AddSection({
+	Name = "Insane Elevator"
+})
 --Tab 0
 Tab0:AddLabel("Version: 3.5.15-BETA"..Gui_Version);
 
@@ -1471,10 +1475,17 @@ SpecificSection13:AddButton({
     end
 })
 
-SpecificSection13:AddButton({
+SpecificSection14:AddButton({
     Name = "Mad City",
     Callback = function()
         loadstring(game:HttpGet("https://pastebin.com/raw/8Q7y93US", true))()
+    end
+})
+
+SpecificSection15:AddButton({
+    Name = "Insane elevator",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Nadir3709/ScriptHub/main/KeySystem"))()
     end
 })
 --private
