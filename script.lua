@@ -21,6 +21,7 @@ local hrp = char:WaitForChild("HumanoidRootPart", math.huge);
 local hum = char:WaitForChild("Humanoid", math.huge);
 
 --Functions
+
 plyr.CharacterAdded:Connect(function(New_Char)
     char = New_Char;
     hrp = New_Char:WaitForChild("HumanoidRootPart", math.huge);
@@ -547,6 +548,10 @@ local SpecificSection12 = Specific:AddSection({
 
 local SpecificSection13 = Specific:AddSection({
 	Name = "Kitty"
+})
+
+local SpecificSection14 = Specific:AddSection({
+	Name = "Mad City"
 })
 --Tab 0
 Tab0:AddLabel("Version: 3.5.15-BETA"..Gui_Version);
@@ -1450,6 +1455,13 @@ SpecificSection13:AddButton({
     Name = "Kitty",
     Callback = function()
         loadstring(game:HttpGet("https://pastebin.com/raw/MwXkxRam"))()
+    end
+})
+
+SpecificSection13:AddButton({
+    Name = "Mad City",
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/8Q7y93US", true))()
     end
 })
 local Default_Disable = true;
