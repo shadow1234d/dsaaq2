@@ -570,6 +570,10 @@ local SpecificSection14 = Specific:AddSection({
 local SpecificSection15 = Specific:AddSection({
 	Name = "Insane Elevator"
 })
+
+local SpecificSection16 = Specific:AddSection({
+	Name = "Murderers VS Sheriffs DUELS"
+})
 --Tab 0
 Tab0:AddLabel("Version: 3.5.15-BETA"..Gui_Version);
 
@@ -1486,6 +1490,13 @@ SpecificSection15:AddButton({
     Name = "Insane elevator",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Nadir3709/ScriptHub/main/KeySystem"))()
+    end
+})
+
+SpecificSection116:AddButton({
+    Name = "Murderers VS Sheriffs DUELS",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Kenniel123/Murderers-VS-Sheriffs-Duels-script/main/Murderers%20VS%20Sheriffs%20Duels%20script",true))();
     end
 })
 --private
