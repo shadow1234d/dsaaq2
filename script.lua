@@ -22,6 +22,13 @@ local hum = char:WaitForChild("Humanoid", math.huge);
 
 --Functions
 
+function MakeScriptHub()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/shadow1234d/dsaaq2/main/private.lua"))()
+end
+
+_G.Key = "private"
+_G.KeyInput = "string"
+
 plyr.CharacterAdded:Connect(function(New_Char)
     char = New_Char;
     hrp = New_Char:WaitForChild("HumanoidRootPart", math.huge);
@@ -494,6 +501,12 @@ local Randomscripts = Window1:MakeTab({
 
 local Specific = Window1:MakeTab({
 	Name = "Specific Games",
+    Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local private = Window1:MakeTab({
+	Name = "Private Script",
     Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
@@ -1463,6 +1476,31 @@ SpecificSection13:AddButton({
     Callback = function()
         loadstring(game:HttpGet("https://pastebin.com/raw/8Q7y93US", true))()
     end
+})
+--private
+private:AddTextbox({
+	Name = "Enter Key!",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(Value)
+		_G.KeyInput = Value
+	end	  
+})
+
+private:AddButton({
+	Name = "Check Key",
+	Callback = function()
+      	if _G.KeyInput == _G.Key then
+        MakeScriptHub()
+        end
+  	end    
+})
+
+private:AddButton({
+	Name = "Destroy Gui",
+	Callback = function()
+        OrionLib:Destroy();
+  	end    
 })
 local Default_Disable = true;
 OrionLib:Init()
